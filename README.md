@@ -117,3 +117,15 @@ Frontend
 ```bash
 npm run build
 ```
+
+## Features
+
+- JWT Authentication
+- Role-Based Access Control (Admin/User)
+- Task CRUD Operations
+- Multi-User Task Assignment
+- Activity Logging
+- Admin & User Dashboards
+- Persistent Login
+- Socket.IO Integration
+- Responsive UI
