@@ -128,7 +128,7 @@ if (user.role === "ADMIN") {
             </p>
 
             <p className="text-sm">
-              Email: SuperAdmin@example.com
+              Email: superadmin@example.com
             </p>
 
             <p className="text-sm">

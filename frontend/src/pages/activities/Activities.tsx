@@ -21,40 +21,39 @@ function Activities() {
         Activity Logs
       </h1>
 
-      {data?.map((activity) => (
-        <div
-          key={activity.id}
-          className="rounded-2xl border-l-4 border-blue-600 bg-white p-6 shadow"
-        >
-          <div className="flex items-start justify-between">
-            <div>
-              <p className="font-semibold text-lg">
-                {activity.user.fullName}
-              </p>
+     {data?.map((activity) => (
+  <div
+    key={activity.id}
+    className="rounded-2xl border-l-4 border-blue-600 bg-white p-6 shadow"
+  >
+    <div className="flex items-start justify-between">
+      <div>
+        <p className="font-semibold text-lg">
+          {activity.user?.fullName ?? "Unknown User"}
+        </p>
 
-              <span className="mt-1 inline-block rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
-                {activity.action}
-              </span>
+        <span className="mt-1 inline-block rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
+          {activity.action}
+        </span>
 
-              <p className="mt-3 text-slate-600">
-                {activity.details}
-              </p>
+        <p className="mt-3 text-slate-600">
+          {activity.details}
+        </p>
 
-              <p className="mt-2 text-sm text-slate-500">
-                Task:
-                {" "}
-                <span className="font-medium">
-                  {activity.task?.title ?? "Deleted Task"}
-                </span>
-              </p>
-            </div>
+        <p className="mt-2 text-sm text-slate-500">
+          Task:{" "}
+          <span className="font-medium">
+            {activity.task?.title ?? "Deleted Task"}
+          </span>
+        </p>
+      </div>
 
-            <div className="text-right text-sm text-slate-500">
-              {new Date(activity.createdAt).toLocaleString()}
-            </div>
-          </div>
-        </div>
-      ))}
+      <div className="text-right text-sm text-slate-500">
+        {new Date(activity.createdAt).toLocaleString()}
+      </div>
+    </div>
+  </div>
+))}
     </div>
   );
 }
