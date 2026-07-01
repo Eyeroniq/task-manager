@@ -92,15 +92,20 @@ http://localhost:5173
 
 ---
 
-# Default Admin
+## Default Admin
 
-```
-Email:
-superadmin@example.com
+The database does not include seeded data.
 
-Password:
-password123
-```
+Create an admin user by either:
+
+- Registering a user and changing its role to ADMIN in PostgreSQL, or
+- Inserting an admin record directly into the users table.
+
+Example credentials:
+
+Email: superadmin@example.com
+Password: password123
+Role: ADMIN
 
 ---
 
