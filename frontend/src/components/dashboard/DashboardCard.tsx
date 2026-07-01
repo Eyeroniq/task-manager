@@ -8,7 +8,7 @@ function DashboardCard({
   value,
 }: Props) {
   return (
-    <div className="rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 p-6 text-white shadow-lg transition hover:scale-105">
+    <div className="rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-700 p-6 text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl">
       <p className="text-sm uppercase tracking-wider text-blue-100">
         {title}
       </p>
